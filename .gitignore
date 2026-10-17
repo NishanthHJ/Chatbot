@@ -1,0 +1,12 @@
+# Virtual environments
+Chatbot/
+pythonclass-py-3.12/
+.venv/
+venv/
+
+# Python generated files
+__pycache__/
+*.py[cod]
+
+# Secrets
+.env
