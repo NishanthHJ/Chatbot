@@ -22,8 +22,7 @@ pipeline{
         stage('Testing-Stage'){
             steps{
                 sh '''
-                    docker kill kannadiga-chat-bot
-                    docker rm kannadiga-chat-bot
+                    
                     docker run -it -d --name kannadiga-chat-bot -p 9001:8501 ${IMAGE_NAME}
                 '''
             } 
