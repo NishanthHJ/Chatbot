@@ -12,7 +12,9 @@ pipeline {
 
         stage('Git-checkout') {
             steps {
-                git url: 'https://github.com/NishanthHJ/Chatbot.git',branch', branch: 'IAC-dev'
+                 git url: 'https://github.com/NishanthHJ/Chatbot.git', branch: 'IAC-dev'
+                 
+
             }
         }
 
