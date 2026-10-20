@@ -64,7 +64,7 @@ pipeline {
                     clusterName: 'karunaadu-cluster',
                     contextName: '',
                     credentialsId: 'kube',
-                    namespace: 'karunaadu',
+                    namespace: 'kannadiga',
                     restrictKubeConfigAccess: false,
                     serverUrl: 'https://C9011AAE090779BEEC2295DEE6F2AC5D.gr7.us-east-1.eks.amazonaws.com'
                 ) {
