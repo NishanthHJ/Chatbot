@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: chatbot-karunaadu
+  name: chatbot-kannadiga
   labels:
-    app: chatbot-karunaadu
+    app: chatbot-kannadiga
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: chatbot-karunaadu
+      app: chatbot-kannadiga
   template:
     metadata:
       labels:
-        app: chatbot-karunaadu
+        app: chatbot-kannadiga
     spec:
       containers:
-      - name: chatbot-karunaadu
+      - name: chatbot-kannadiga
         image: replace
         imagePullPolicy: Always
         ports:
@@ -31,11 +31,11 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: chatbot-karunaadu-service
+  name: chatbot-kannadiga-service
 spec:
   type: LoadBalancer
   selector:
-    app: chatbot-karunaadu
+    app: chatbot-kannadiga
   ports:
   - port: 80
     targetPort: 8501

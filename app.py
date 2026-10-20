@@ -5,7 +5,7 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_openai import OpenAI
 import os
 
-st.title('Karunaadu ChatBot')
+st.title('Kannadiga ChatBot')
 
 prompt = ChatPromptTemplate.from_messages(
     [
